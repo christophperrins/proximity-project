@@ -1,0 +1,5 @@
+FROM java:8-jdk-alpine
+
+COPY ./target/proximity-0.1.0.jar /usr/app/
+
+ENTRYPOINT ["java","-jar","usr/app/proximity-0.1.0.jar"]
